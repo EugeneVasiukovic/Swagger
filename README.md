@@ -4,7 +4,7 @@
 
 - [SWAGGERHUB](https://app.swaggerhub.com/apis/YVASIUKIVICH_1/api/1.0.0#/)
 - [Репозиторий ТЗ для WEB-service](https://github.com/LikhatskayaV/Web_Service) своя ссылка
-- [Описание структуры]
+- [Описание структуры](https://github.com/LikhatskayaV/Web_Service/blob/main/structure.md)
 -
 
 
