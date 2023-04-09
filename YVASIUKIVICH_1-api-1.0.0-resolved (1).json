@@ -1,0 +1,251 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Web serviсe к сайту Вадима Ксензова",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://localhost:1425",
+      "description": "Proxy server"
+    }
+  ],
+  "paths": {
+    "/telegram_group": {
+      "post": {
+        "tags": [
+          "Telegram group"
+        ],
+        "summary": "Метод получения Списка групп и их описания",
+        "operationId": "getAllGroups",
+        "parameters": [
+          {
+            "name": "telegram_nick",
+            "in": "query",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешный ответ",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Telegram_group"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка в зпросе данные не найдены",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/401"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/screening_info": {
+      "get": {
+        "tags": [
+          "Screening info"
+        ],
+        "summary": "Метод получения информации о курсе",
+        "operationId": "getAllinfo",
+        "responses": {
+          "200": {
+            "description": "Успешный ответ",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/screening_info"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Ошибка в зпросе",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Join_course": {
+      "post": {
+        "tags": [
+          "Join_course"
+        ],
+        "summary": "Метод получения информации о курсе",
+        "operationId": "getAllJoin",
+        "parameters": [
+          {
+            "name": "telegram_nick",
+            "in": "query",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Link_Linkidin",
+            "in": "query",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешный ответ",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Join_course"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Ошибка в зпросе",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "401": {
+        "required": [
+          "code",
+          "message"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "Telegram_group": {
+        "required": [
+          "qa_group_curse"
+        ],
+        "type": "object",
+        "properties": {
+          "qa_group_curse": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "screening_info": {
+        "required": [
+          "Topic1",
+          "Topic2",
+          "Topic3",
+          "Topic4",
+          "Topic5",
+          "Topic6"
+        ],
+        "type": "object",
+        "properties": {
+          "Topic1": {
+            "type": "string"
+          },
+          "Topic2": {
+            "type": "string"
+          },
+          "Topic3": {
+            "type": "string"
+          },
+          "Topic4": {
+            "type": "string"
+          },
+          "Topic5": {
+            "type": "string"
+          },
+          "Topic6": {
+            "type": "string"
+          }
+        }
+      },
+      "Error": {
+        "required": [
+          "code",
+          "message"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "Join_course": {
+        "required": [
+          "Link_Linkidin",
+          "email",
+          "telegram_nick"
+        ],
+        "type": "object",
+        "properties": {
+          "telegram_nick": {
+            "type": "string"
+          },
+          "Link_Linkidin": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
