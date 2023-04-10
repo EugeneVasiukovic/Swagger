@@ -1,7 +1,5 @@
-# Описание структуры:
-
 ### PROXY-SERVER:
-PROXY server будет состоять из 3 endpoints, данные endpoints в свою очередь будут обращаться к веб-сервисам  и возвращать информацию HTTP-клиенту.
+PROXY server будет состоять из 3 endpoints, данные endpoints, в свою очередь, будут обращаться к веб-сервисам и возвращать информацию HTTP-клиенту.
 
 **Сервер располагается на хосте (URL and PORT):** localhost:1425  
 **Endpoints:** /join_course, /telegram_group,  /screening_info
