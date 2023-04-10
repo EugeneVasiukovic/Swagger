@@ -2,7 +2,7 @@
 openapi: 3.0.0
 info:
   title: Web serviсe к сайту Вадима Ксензова
-  description: ""
+  description: "    Для удобства работы с [сайтом Курс тестирования ПО Вадима Ксендзова](https://ksendzov.com/) планируется добавить три функциональные кнопки:\n`[Запись на курс]`, `[Телеграм для студентов]`, `[Информация о скринингах]`\n\n\nВ данном техническом задании представлен Proxy-сервер, через который происходит перенаправление(отправка) запросов на два WEB-сервиса и возврат запрашиваемых данных, как на сервер назначения. Также endpoints API, методы HTTP запросов и данные request и response для проверки общей работоспособности предложенных для реализации модулей.\n\n\nПроверки для API(описание) были создаданы с помошью [Swagger](https://app.swaggerhub.com/apis/YVASIUKIVICH_1/api/1.0.0#/)\nНекоторые полезные ссылки:\n- [Основная информация](https://github.com/LikhatskayaV/Web_Service/edit/main/README.md)\n\n- [Репозиторий ТЗ для WEB-service](https://github.com/LikhatskayaV/Web_Service)\n\n- [Техническое задание](https://github.com/LikhatskayaV/Web_Service/blob/main/technical_specification.md)\n\n- [Пользовательские требования](https://github.com/LikhatskayaV/Web_Service/blob/main/custom_requirements.md)\n\n- [ссылки на JSON и YAML]() "
   version: 1.0.0
 servers:
 - url: https://localhost:1425
