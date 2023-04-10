@@ -16,3 +16,4 @@
 - [Репозиторий ТЗ для WEB-service](https://github.com/LikhatskayaV/Web_Service)
 - [Техническое задание](https://github.com/LikhatskayaV/Web_Service/blob/main/technical_specification.md)
 - [Пользовательские требования](https://github.com/LikhatskayaV/Web_Service/blob/main/custom_requirements.md) -поправить
+- [ссылки на JSON и YAML]() ???
