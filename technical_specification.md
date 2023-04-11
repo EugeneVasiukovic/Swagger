@@ -52,7 +52,7 @@ PROXY server будет состоять из 3 endpoints, данные endpoint
 
 3) **/screening_info** принимает информацию методом **`GET`**
 - Перенаправляет запрос на Web-сервис по адресу https://localhost:1427/WS1/screening_info_QA.  
-- Данный endpoint не имеет параметра request. 
+- Данный endpoint не имеет параметров в `Request`. 
 - `Response` возвращает JSON в котором хранятся данные:  
 {  
 "HomeWorks_list":  
