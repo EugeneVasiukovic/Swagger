@@ -15,5 +15,6 @@
 - [Основная информация](https://github.com/LikhatskayaV/Web_Service/edit/main/README.md)
 - [Репозиторий ТЗ для WEB-service](https://github.com/LikhatskayaV/Web_Service)
 - [Техническое задание](https://github.com/LikhatskayaV/Web_Service/blob/main/technical_specification.md)
-- [Пользовательские требования](https://github.com/LikhatskayaV/Web_Service/blob/main/custom_requirements.md) -поправить
-- [ссылки на JSON и YAML]() ???
+- [Пользовательские требования](https://github.com/LikhatskayaV/Web_Service/blob/main/custom_requirements.md)
+- [JSON](https://github.com/LikhatskayaV/Web_Service/blob/main/YVASIUKIVICH_1-api-1.0.0-resolved%20(2).json)
+- [YAML](https://github.com/LikhatskayaV/Web_Service/blob/main/YVASIUKIVICH_1-api-1.0.0-resolved%20(2).yaml)
